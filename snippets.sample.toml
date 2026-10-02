@@ -1,0 +1,22 @@
+# ペタッと (petatto) の設定ファイル(UTF-8 で保存してください)
+# 編集内容は、次にホットキーを押したときに反映されます。
+
+# 呼び出しホットキー: 修飾キー (Ctrl / Alt / Shift / Win) + キー (A-Z, 0-9, F1-F24, Space)
+hotkey = "Ctrl+Alt+Space"
+
+# スニペットは [[snippet]] を並べるだけ。name は検索・表示用、text が貼り付けられる本文。
+[[snippet]]
+name = "メールアドレス"
+text = "taro@example.com"
+
+# 複数行は ''' で囲む(中身はそのまま貼り付けられる。末尾の改行 1 つは取り除かれる)
+[[snippet]]
+name = "挨拶"
+text = '''
+お世話になっております。
+山田です。
+'''
+
+# name を省略すると、本文の 1 行目が名前になる
+[[snippet]]
+text = "git log --oneline --graph --decorate"
