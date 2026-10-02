@@ -67,3 +67,7 @@ cargo build --release
 ```
 
 設定の解釈や検索などの OS 非依存部分(`src/config.rs`)は、どの OS でも `cargo test` で確認できる。
+
+## ライセンス
+
+[MIT](LICENSE)
