@@ -9,7 +9,7 @@
 ## 使い方
 
 1. `petatto.exe` を好きなフォルダーに置いて起動する(タスクトレイに常駐)
-2. `Ctrl+Alt+Space` でポップアップを開く
+2. `Ctrl+Space` でポップアップを開く
 3. 文字を打って絞り込み、`↑` `↓` で選び、`Enter` で貼り付け
 
 | キー | 動作 |
@@ -29,7 +29,7 @@ exe と同じフォルダーの `snippets.toml`(初回起動時にサンプル�
 保存すれば、次にホットキーを押したときに反映される。
 
 ```toml
-hotkey = "Ctrl+Alt+Space"
+hotkey = "Ctrl+Space"
 
 [[snippet]]
 name = "メールアドレス"

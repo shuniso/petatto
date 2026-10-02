@@ -34,7 +34,7 @@ struct RawSnippet {
 }
 
 fn default_hotkey() -> String {
-    "Ctrl+Alt+Space".to_string()
+    "Ctrl+Space".to_string()
 }
 
 pub struct Config {
@@ -151,7 +151,7 @@ mod tests {
     #[test]
     fn sample_parses() {
         let cfg = parse(SAMPLE).unwrap();
-        assert_eq!(cfg.hotkey, "Ctrl+Alt+Space");
+        assert_eq!(cfg.hotkey, "Ctrl+Space");
         assert_eq!(cfg.snippets.len(), 3);
         assert_eq!(cfg.snippets[0].label, "メールアドレス\ttaro@example.com");
         assert_eq!(cfg.snippets[1].text, "お世話になっております。\n山田です。");
@@ -165,7 +165,7 @@ mod tests {
     #[test]
     fn hotkey_defaults_and_bom_and_crlf() {
         let cfg = parse("\u{feff}[[snippet]]\r\ntext = '''\r\na\r\nb\r\n'''\r\n").unwrap();
-        assert_eq!(cfg.hotkey, "Ctrl+Alt+Space");
+        assert_eq!(cfg.hotkey, "Ctrl+Space");
         assert_eq!(cfg.snippets[0].text, "a\nb");
     }
 

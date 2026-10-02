@@ -2,7 +2,7 @@
 # 編集内容は、次にホットキーを押したときに反映されます。
 
 # 呼び出しホットキー: 修飾キー (Ctrl / Alt / Shift / Win) + キー (A-Z, 0-9, F1-F24, Space)
-hotkey = "Ctrl+Alt+Space"
+hotkey = "Ctrl+Space"
 
 # スニペットは [[snippet]] を並べるだけ。name は検索・表示用、text が貼り付けられる本文。
 [[snippet]]
